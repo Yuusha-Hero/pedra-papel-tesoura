@@ -1,0 +1,72 @@
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.arena{
+    width: 32%;
+    padding-top: 1%;
+    margin: 0 auto;
+}
+#inimigo{
+    margin-right: 125px;
+}
+.deck{
+    width: 28%;
+    padding-top: 26%;
+    margin: 0 auto;
+}
+.cards{
+    width: 125px;
+    height: 225px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+    /* Centralizando as imagens nas cartas */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards:hover{
+    /* Aplicando uma animação de 102.5% de Zoom ao passar o mouse */
+    transform: scale(1.025);
+}
+#cardL{
+    /* Alterando a posição da carta direita para trás da carta do meio */
+    position: sticky;
+    z-index: -1;
+    /* Rotacionando a carta 20 graus sentido anti-horário para dar efeito de baralho */
+    transform: rotate(-20deg);
+    /* Colocando as cartas mais próximas uma das outras */
+    margin-top: 20px;
+    margin-right: -20px;
+    /* Atribuindo o Papel de Parede */
+    background-image: url(img/tijolo.jpg);
+}
+#cardL:hover{
+    /* Aplicando uma animação de movimentação ao passar o mouse */
+    transform: rotate(-25deg);
+}
+#cardM{
+    /* Colocando as cartas mais próximas uma das outras */
+    margin-right: -20px;
+    /* Atribuindo o Papel de Parede */
+    background-image: url(img/tesoura.jpg);
+}
+#cardR{
+    /* Alterando a posição da carta direita para trás da carta do meio */
+    position: sticky;
+    z-index: -2;
+    /* Rotacionando a carta 20 graus sentido horário para dar efeito de baralho */
+    transform: rotate(20deg);
+    /* Colocando as cartas mais próximas uma das outras */
+    margin-top: 20px;
+    /* Atribuindo o Papel de Parede */
+    background-image: url(img/papel.jpg);
+}
+#cardR:hover{
+    /* Aplicando uma animação de movimentação ao passar o mouse */
+    transform: rotate(25deg);
+}

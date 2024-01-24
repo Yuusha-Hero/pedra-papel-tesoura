@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+
+    <div class="arena">
+        <div class="setores" id="setorInimigo">
+            <h2>PC</h2>
+            <div class="cards" id="inimigo"></div>
+        </div>
+        <div class="setores" id="setorPrincipal">
+            <h2>Você</h2>
+            <div class="cards" id="ataque"></div>
+        </div>
+    </div>
+
+    <div class="deck">
+        <div class="cards" id="cardL" onclick="LimparEfeito(); GerarInimigo(); Pedra(); ConsultarResultado()"></div>
+        <div class="cards" id="cardM" onclick="LimparEfeito(); GerarInimigo(); Tesoura(); ConsultarResultado()"></div>
+        <div class="cards" id="cardR" onclick="LimparEfeito(); GerarInimigo(); Papel(); ConsultarResultado()"></div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
